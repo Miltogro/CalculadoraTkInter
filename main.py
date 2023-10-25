@@ -21,7 +21,7 @@ def show(valor):
 def clear():
     saida.delete(0)
 
-def clear_all(): #APAGA TUDO DA SAIDA E LIMPA "PRINTAR"
+def clearAll(): #APAGA TUDO DA SAIDA E LIMPA "PRINTAR"
     global printar
     saida.delete(0, 'end')
     printar = ""
@@ -42,8 +42,8 @@ def calcular():
 saida = ctk.CTkEntry(janela, placeholder_text='', width=270, height= 100, font=font1)
 saida.place(x=10, y=10)
 
-clear_all_button = ctk.CTkButton(janela, text='AC', width=60, height=25, command=clear_all, font=font3, fg_color='#b5520b')
-clear_all_button.place(x=220, y=120)
+botaoCA = ctk.CTkButton(janela, text='AC', width=60, height=25, command=clearAll, font=font3, fg_color='#b5520b')
+botaoCA.place(x=220, y=120)
 
 botaoClear = ctk.CTkButton(janela, text='C', width=60, height=25, command=clear, font=font3, fg_color='#b5520b')
 botaoClear.place(x=220, y=155)
