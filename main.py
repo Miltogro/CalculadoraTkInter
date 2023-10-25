@@ -84,11 +84,14 @@ botaoIgual.place(x=150, y=330)
 botaoPonto = ctk.CTkButton(janela, text='.', width=60, height=60, font=font2, command=lambda:show('.'), fg_color='#b5520b')
 botaoPonto.place(x=10, y=330)
 
-botaoDividir = ctk.CTkButton(janela, text='/', width=60, height=25, font=font3, command=lambda:show('/'), fg_color='#b5520b')
+botaoDividir = ctk.CTkButton(janela, text='/', width=25, height=25, font=font3, command=lambda:show('/'), fg_color='#b5520b')
 botaoDividir.place(x=220, y=190)
 
-botaoPorcento = ctk.CTkButton(janela, text='%', width=60, height=25, font=font3, command=lambda:show('%'), fg_color='#b5520b')
-botaoPorcento.place(x=220, y=225)
+botaoPorcento = ctk.CTkButton(janela, text='%', width=25, height=25, font=font3, command=lambda:show('%'), fg_color='#b5520b')
+botaoPorcento.place(x=255, y=190)
+
+botaoVezes = ctk.CTkButton(janela, text='x', width=60, height=25, font=font3, command=lambda:show('*'), fg_color='#b5520b')
+botaoVezes.place(x=220, y=225)
 
 botaoMais = ctk.CTkButton(janela, text='+', width=60, height=25, font=font3, command=lambda:show('+'), fg_color='#b5520b')
 botaoMais.place(x=220, y=260)
